@@ -14,4 +14,3 @@
 6. `git pull origin develop`
 7. `npm install`
 8. `gulp serve`
-9. go to [localhost](http://localhost:3000/)
