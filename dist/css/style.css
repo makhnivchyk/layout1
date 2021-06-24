@@ -786,7 +786,7 @@ table {
   }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 550px) {
   .container {
     max-width: none;
     padding: 0 20px;
