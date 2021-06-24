@@ -552,7 +552,7 @@ table {
 }
 
 .teeth-whitening__second {
-  margin: 90px auto;
+  margin: 50px auto;
 }
 
 .teeth-whitening__img {
@@ -594,7 +594,7 @@ table {
 
 .yellow-block {
   background-color: #FDC525;
-  margin-bottom: 160px;
+  margin-bottom: 100px;
 }
 
 .yellow-block-wrapper {
@@ -769,6 +769,10 @@ table {
 
   .container .teeth-whitening__header {
     text-align: right;
+  }
+
+  .container .teeth-whitening__header_second {
+    text-align: center;
   }
 }
 
