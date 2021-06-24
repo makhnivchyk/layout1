@@ -1,0 +1,226 @@
+@import "null"
+@import "_variables"
+
+.html
+    font-size: 10px
+
+.wrapper
+    width: 100%
+    min-height: 100%
+    overflow: hidden
+    diplay: flex
+    flex-direction: column
+
+/*repeat blocks*/
+
+.header
+    font-family: $helvetica 
+    font-style: normal
+    font-weight: 400
+    font-size: 38px
+    line-height: 42px
+    letter-spacing: 3.10588px
+
+.btn
+    box-sizing: border-box
+    border-radius: 25.5px
+    font-family: $georia
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 20px
+    letter-spacing: 1.16471px
+    display: flex
+    align-items: center
+    justify-content: center
+
+/*green-block*/
+
+.green-block 
+    min-height: 303px
+    background-color: $green
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    &__title
+        text-transform: uppercase
+        font-size: 48px
+        color: white
+        line-height: 62px
+        letter-spacing: 3.10588px
+        font-family: $helvetica
+        font-style: normal
+        font-weight: bold
+
+/*Teeth Whitening*/
+
+.teeth-whitening
+    display: flex
+    flex-direction: column
+    width: 100%
+    margin-top: 120px
+    
+    &__first
+        display: flex
+        justify-content: space-between
+    &__second
+        margin: 90px auto
+    &__img
+        width: 49%
+        img
+            width: 100%
+    &__description
+        width: 49%
+    &__header
+        color: $blue
+        margin-bottom: 45px
+        &_second
+            text-align: center
+    &__text
+        font-family: $georia
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 27px
+        letter-spacing: 1.16471px
+        color: $black
+        p
+            margin: 15px auto
+
+/*yellow-block*/
+
+.yellow-block
+    background-color: $yellow
+    margin-bottom: 160px
+    &-wrapper
+        min-height: 333px
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+        align-items: center
+        padding: 20px 0
+        text-align: center
+    &-wrapper__header
+        color: white
+    &-wrapper__subheader
+        font-family: $helvetica
+        font-style: normal  
+        font-weight: bold
+        font-size: 24px
+        line-height: 23px
+        text-align: center
+        letter-spacing: 1.55294px
+        text-transform: uppercase
+        color: $black
+    &-wrapper__btn
+        background: white
+        border: 1px solid $yellow
+        width: 255px
+        height: 51px
+        &:hover
+            background: $black
+            color: white
+
+/*Other services*/
+    
+.other-services
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-bottom: 160px
+    &__header
+        font-weight: 700
+        font-size: 24px
+        line-height: 23px
+        letter-spacing: 1.55294px
+        text-transform: uppercase
+        color: $green
+        margin-bottom: 90px
+        text-align: center
+    &__items
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        flex-basis: 33.333%
+        flex-shrink: 1
+.item
+    flex-grow: 1
+    height: 419px
+    background-size: cover
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &__header
+        font-weight: normal
+        color: white
+    &__btn
+        background: $yellow
+        border: 1px solid white
+        width: 154px
+        height: 51px
+        margin-top: 48px
+        &:hover
+            background: $black
+            color: white
+    &_1
+        background-image: URL('/img/B/category_1.png')
+    &_2
+        background-image: URL('/img/B/category_2.png')
+    &_3
+        background-image: URL('/img/B/category_3.png') 
+    &_4
+        background-image: URL('/img/B/category_4.png') 
+    &_5
+        background-image: URL('/img/B/category_5.png')
+    &_6
+        background-image: URL('/img/B/category_6.png')
+        
+
+/*Container sheet*/
+
+.container
+    max-width: $maxWidthContainer + px
+    margin: 0 auto
+    @media(min-width: $md5 + px)
+        max-width: 1500px
+
+    @media(max-width: $md1 + px)
+        max-width: 970px
+        
+    @media(max-width: $md2 + px)
+        max-width: 700px
+        .hide
+            display: none
+        .footer
+            justify-content: space-evenly
+            align-items: center
+            &__icons
+                width: 150px
+        .teeth-whitening
+            margin-top: -80px
+            &__first
+                flex-direction: column
+            &__description
+                width: 100%
+            &__header
+                text-align: right
+    @media(max-width: $md3 + px)
+        max-width: 500px
+        .footer
+            &__btn
+                display: none
+        
+    @media(max-width: $md4 + px)
+        max-width: none
+        padding: 0 20px
+
+
+
+
+
