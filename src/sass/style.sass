@@ -54,9 +54,9 @@
         font-style: normal
         font-weight: bold
 
-/*Teeth Whitening*/
+/*service*/
 
-.teeth-whitening
+.service
     display: flex
     flex-direction: column
     width: 100%
@@ -97,7 +97,7 @@
         min-height: 333px
         display: flex
         flex-direction: column
-        justify-content: space-evenly
+        justify-content: center
         align-items: center
         padding: 20px 0
         text-align: center
@@ -113,6 +113,7 @@
         letter-spacing: 1.55294px
         text-transform: uppercase
         color: $black
+        margin: 32px 0
     &-wrapper__btn
         background: white
         border: 1px solid $yellow
@@ -143,20 +144,17 @@
         display: flex
         flex-direction: row
         flex-wrap: wrap
-        justify-content: center
-        align-items: center
 .item
     position: relative
     flex: 0 0 33.33333%
     max-width: 33.33333%
     z-index: 1
-    flex-grow: 1
     height: 419px
-    background-size: cover
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
+    text-align: center
     @media (max-width: 991px)
         flex: 0 0 50%
         max-width: 50%
@@ -185,7 +183,6 @@
             background: $black
             color: white
 
-
 /*Container sheet*/
 
 .container
@@ -206,7 +203,7 @@
             align-items: center
             &__icons
                 width: 150px
-        .teeth-whitening
+        .service
             margin-top: -80px
             &__first
                 flex-direction: column

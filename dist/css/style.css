@@ -573,46 +573,46 @@ table {
   font-weight: bold;
 }
 
-/*Teeth Whitening*/
+/*service*/
 
-.teeth-whitening {
+.service {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-top: 120px;
 }
 
-.teeth-whitening__first {
+.service__first {
   display: flex;
   justify-content: space-between;
 }
 
-.teeth-whitening__second {
+.service__second {
   margin: 50px auto;
 }
 
-.teeth-whitening__img {
+.service__img {
   width: 49%;
 }
 
-.teeth-whitening__img img {
+.service__img img {
   width: 100%;
 }
 
-.teeth-whitening__description {
+.service__description {
   width: 49%;
 }
 
-.teeth-whitening__header {
+.service__header {
   color: #0D9EDF;
   margin-bottom: 45px;
 }
 
-.teeth-whitening__header_second {
+.service__header_second {
   text-align: center;
 }
 
-.teeth-whitening__text {
+.service__text {
   font-family: "Georgia";
   font-style: normal;
   font-weight: normal;
@@ -622,7 +622,7 @@ table {
   color: #1E1B18;
 }
 
-.teeth-whitening__text p {
+.service__text p {
   margin: 15px auto;
 }
 
@@ -637,7 +637,7 @@ table {
   min-height: 333px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   padding: 20px 0;
   text-align: center;
@@ -657,6 +657,7 @@ table {
   letter-spacing: 1.55294px;
   text-transform: uppercase;
   color: #1E1B18;
+  margin: 32px 0;
 }
 
 .yellow-block-wrapper__btn {
@@ -696,8 +697,6 @@ table {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 }
 
 .item {
@@ -705,13 +704,12 @@ table {
   flex: 0 0 33.33333%;
   max-width: 33.33333%;
   z-index: 1;
-  flex-grow: 1;
   height: 419px;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .item__image {
@@ -787,23 +785,23 @@ table {
     width: 150px;
   }
 
-  .container .teeth-whitening {
+  .container .service {
     margin-top: -80px;
   }
 
-  .container .teeth-whitening__first {
+  .container .service__first {
     flex-direction: column;
   }
 
-  .container .teeth-whitening__description {
+  .container .service__description {
     width: 100%;
   }
 
-  .container .teeth-whitening__header {
+  .container .service__header {
     text-align: right;
   }
 
-  .container .teeth-whitening__header_second {
+  .container .service__header_second {
     text-align: center;
   }
 }
