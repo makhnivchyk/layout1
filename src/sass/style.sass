@@ -157,6 +157,12 @@
     flex-direction: column
     justify-content: center
     align-items: center
+    @media (max-width: 991px)
+        flex: 0 0 50%
+        max-width: 50%
+    @media (max-width: 575px)
+        flex: 0 0 100%
+        max-width: 100%
     &__image
         position: absolute
         left: 0

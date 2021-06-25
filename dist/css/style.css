@@ -765,6 +765,11 @@ table {
 }
 
 @media (max-width: 991px) {
+  .item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
   .container {
     max-width: 700px;
   }
@@ -810,6 +815,13 @@ table {
 
   .container .footer__btn {
     display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .item {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
