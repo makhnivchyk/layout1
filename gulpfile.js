@@ -25,7 +25,6 @@ let {src, dest, series, watch} = require('gulp'),
     gulp = require('gulp'),
     sass = require('gulp-sass'),
     csso = require('gulp-csso'),
-    htmlmin = require('gulp-htmlmin'),
     include = require('gulp-file-include'),
     del = require('del');
     concat = require('gulp-concat'),
@@ -33,8 +32,6 @@ let {src, dest, series, watch} = require('gulp'),
     rename = require('gulp-rename'),
     group_media = require('gulp-group-css-media-queries'),
     image = require('gulp-imagemin') ,
-    webp = require('gulp-webp'),
-    webphtml = require('gulp-webp-html'),
     ttf2woff = require('gulp-ttf2woff'),
     ttf2woff2 = require('gulp-ttf2woff2'),
     sync = require('browser-sync').create()
@@ -43,10 +40,6 @@ function html() {
     return src(path.src.html) 
                 .pipe(include({  
                    prefix: '@@'
-                }))
-                .pipe(webphtml())  
-                .pipe(htmlmin({
-                    collapseWhitespace: true
                 }))
                 .pipe(dest(path.build.html)) 
 }
@@ -70,10 +63,6 @@ function toSass() {
 
 function images() {
     return src(path.src.img)
-        .pipe(webp({  
-               quality: 70   
-        }))
-        .pipe(src(path.src.img))
         .pipe(image({
             progressive:true,
             svgoPlugins: [{removeViewBox: false}],
