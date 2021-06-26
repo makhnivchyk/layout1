@@ -1,5 +1,5 @@
 @import "_variables"
-
+@import "_mixins"
 /*Footer*/
 
 a
@@ -14,24 +14,13 @@ a
     &__wrapper
         background-color: $blue
     &__header 
-        color: $black
-        font-family: $helvetica
-        font-style: normal
-        font-weight: bold !important
-        font-size: 18px !important
-        line-height: 21px
-        text-align: center
-        letter-spacing: 1.16471px
-        text-transform: uppercase
+        +header(bold, 18px, 21px, 1.16471px, uppercase, $black)
     &__btn
-        background: $yellow
-        border: 1px solid white
-        width: 255px
-        height: 51px
+        +btn($yellow, white, 255px, 51px)
         color: $black !important
+        font-style: bold 
         &:hover
-            background: $black
-            color: white !important
+            +btnHover($black, white !important)
     &__icons
         display: flex
         flex-direction: row
@@ -50,14 +39,8 @@ a
     &__info
         @extend %flex-space-between
     &__info-item
-        font-family: $georia
-        font-style: normal
-        font-weight: normal
-        font-size: 14px
-        line-height: 27px
+        +text(normal, normal, 14px, 27px, 0.905882px, white)
         text-align: center
-        letter-spacing: 0.905882px
-        color: white
         &_bold
             font-weight: bold
 

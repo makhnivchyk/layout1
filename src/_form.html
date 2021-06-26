@@ -1,0 +1,34 @@
+<form action="" class="form">
+    <div class="box form__header header">
+        Appointment Request:
+    </div>
+    <fieldset class="start box form__checkbox firstCheckout">
+        <input type="checkbox" id="firstCheckout" name="firstCheckout" value="firstCheckout">
+        <label for="firstCheckout">New patient</label>
+    </fieldset>
+    <fieldset class="start form__checkbox secondCheckout">
+        <input type="checkbox" id="secondCheckout" name="secondCheckout" value="secondCheckout">
+        <label for="secondCheckout">Existing Patient</label>
+    </fieldset>
+    <input class="box form__input name" type="text" id="name" name="name" placeholder="First and Last Name *">
+    <input class="box form__input email" type="email" id="email" name="email" placeholder="Email *">
+    <input class="box form__input phone" type="tel" id="phone" name="phone" placeholder="Phone *">
+    <input class="box form__input serviceType" type="text" id="service" name="service" placeholder="Service Type*">
+    <input class="box form__input day" type="text" id="day" name="day" placeholder="Preffered Day*">
+    <fieldset class="box time">
+        <fieldset class="form__checkbox time__width">
+            <input type="checkbox" id="time1" name="time1" value="time1">
+            <label for="time1">8AM - 12PM</label>
+        </fieldset>
+        <fieldset class="form__checkbox time__width">
+            <input type="checkbox" id="time2" name="time2" value="time2">
+            <label for="time2">12PM - 4PM</label>
+        </fieldset>
+        <fieldset class="form__checkbox time__width">
+            <input type="checkbox" id="time3" name="time3" value="time3">
+            <label for="time3">4PM - 7PM</label>
+        </fieldset>
+    </fieldset>
+    <textarea class="box form__textarea message" name="message" placeholder="Message">  Message</textarea>
+    <input class="box form__btn submit" type="submit" class="form__btn btn" value="Book an appointment">
+</form>

@@ -1,0 +1,25 @@
+@import "_variables"
+@import "_mixins"
+    
+/*yellow-block*/
+
+.yellow-block
+    background-color: $yellow
+    margin-bottom: 100px
+    &-wrapper
+        min-height: 333px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 20px 0
+        text-align: center
+    &-wrapper__header
+        +header(normal, 48px, 42px, 3.10588px, none, white)
+    &-wrapper__subheader
+        +header(bold, 24px, 23px, 1.55294px, uppercase, $black)
+        margin: 32px 0
+    &-wrapper__btn
+        +btn(white, $yellow, 255px, 51px)
+        &:hover
+            +btnHover($black, white)

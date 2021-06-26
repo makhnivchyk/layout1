@@ -1,0 +1,30 @@
+@import "_variables"
+@import "_mixins"
+
+/*service*/
+
+.service
+    display: flex
+    flex-direction: column
+    width: 100%
+    margin-top: 120px
+    &__first
+        display: flex
+        justify-content: space-between
+    &__second
+        margin: 50px auto
+    &__img
+        width: 49%
+        img
+            width: 100%
+    &__description
+        width: 49%
+    &__header
+        +header(normal, 48px, 42px, 3.10588px, none, $blue)
+        margin-bottom: 45px
+        &_second
+            text-align: center
+    &__text
+        +text(normal, normal, 18px, 27px, 1.16471px, $black)
+        p
+            margin: 15px auto

@@ -1,0 +1,65 @@
+@import "_variables"
+@import "_mixins"
+
+/*HOME LAYOUT*/
+
+/*Intro*/
+
+.header-wrapper
+    height: 100vh
+
+.intro
+    +bgPhotoBlock(100%)
+    &__img
+        +bgPhotoImg
+    &__header
+        +header(bold, 80px, 80px, 20px, uppercase, $green)
+        @media(max-width: 613px)
+            +header(bold, 50px, 80px, 10px, uppercase, $green)
+    &__subheader
+        +header(normal, 48px, 42px, 3.10588px, none, $blue)
+        margin: 60px 0
+        @media(max-width: 613px)
+            +header(normal, 36px, 32px, 3.10588px, none, $blue)
+    &__btn
+        +btn(white, $yellow, 124px, 51px) 
+        &:hover
+            +btnHover($black, white)
+
+/*First block*/
+
+.first-block
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center 
+    &__header
+        +header(bold, 48px, 62px, 3.10588px, uppercase, $green)
+        margin-top: 120px    
+        margin-bottom: 59px
+        &_hours
+            +header(bold, 24px, 23px, 1.55294px, uppercase, $green)
+            margin-bottom: 16px
+    &__text
+        +text(normal, normal, 18px, 27px, 1.16471px, $black) 
+        text-align: left
+        margin-bottom: 60px
+        p
+            margin: 15px auto
+    &__info
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        width: 100%
+    &__hours
+        flex-basis: 50% 
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    &__form
+        flex-basis: 50% 
+    &__item
+        +text(italic, 600, 18px, 27px, 1.16471px, $blue)
+        margin: 16px 0

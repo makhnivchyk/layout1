@@ -1,0 +1,71 @@
+@import "_variables"
+
+=header($weight, $size, $height, $spacing, $transform, $color)
+    font-family: $helvetica
+    font-style: normal
+    text-align: center
+    font-weight: $weight
+    font-size: $size
+    line-height: $height
+    letter-spacing: $spacing
+    text-transform: $transform
+    color: $color
+
+=text($style, $weight, $size, $height, $spacing, $color)
+    font-family: $georia
+    text-align: center
+    font-style: $style
+    font-weight: $weight
+    font-size: $size
+    line-height: $height
+    letter-spacing: $spacing
+    color: $color
+
+=btn($bgColor, $borderColor, $width, $height)
+    box-sizing: border-box
+    border-radius: 25.5px
+    font-family: $georia
+    font-style: normal
+    font-weight: bold !important
+    font-size: 18px
+    line-height: 20px
+    letter-spacing: 1.16471px
+    display: flex
+    align-items: center
+    justify-content: center
+    background: $bgColor
+    border: 1px solid $borderColor
+    width: $width
+    height: $height
+
+=btnHover($hoverBgColor, $hoverTextColor)
+    background: $hoverBgColor
+    color: $hoverTextColor
+
+=bgPhotoBlock($heightBlock)
+        position: relative
+        z-index: 1
+        height: $heightBlock
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+
+=bgPhotoImg
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    object-position: center
+    z-index: -1
+    background: url('/img/B/backgroung.png')
+    opacity: 0.44
+
+=formSmaller
+    .email
+        grid-column: 1 / span 2
+    .phone
+        grid-column: 1 / span 2
