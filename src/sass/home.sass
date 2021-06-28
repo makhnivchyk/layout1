@@ -11,7 +11,7 @@
 .intro
     +bgPhotoBlock(100%)
     &__img
-        +bgPhotoImg
+        +bgPhotoImg(0.66)
     &__header
         +header(bold, 80px, 80px, 20px, uppercase, $green)
         @media(max-width: 613px)
@@ -63,3 +63,84 @@
     &__item
         +text(italic, 600, 18px, 27px, 1.16471px, $blue)
         margin: 16px 0
+
+/*Third block*/
+
+.third-block
+    padding: 80px 0
+    background: $blue
+    &__header
+        +header(500, 48px, 62px, 3.10588px, uppercase, white)
+    &__items
+        margin: 60px 0 32px 0
+    &__item
+        +text(italic, bold, 18px, 27px, 1.16471px, black)
+        margin-bottom: 20px
+    &__btn
+        +btn(white, $yellow, 87px, 51px)
+        margin: 0 auto
+        &:hover
+            +btnHover($black, white)
+
+/*Fourth block*/
+
+.fourth-block
+    &__header
+        +header(bold, 80px, 62px, 20px, uppercase, $green)
+        margin: 160px 0 120px 0 
+        font-size: calc(48px + 32 *(100vw/1440))    
+    &__first-subblock
+        display: flex
+        margin-bottom: 120px
+    &__second-subblock
+        display: flex
+.first-subblock
+    &__info
+        width: 48% 
+    &__text
+        width: 100%
+        +text(normal, normal, 18px, 27px, 1.16471px, $black)
+        text-align: left
+    &__btn
+        +btn(white, $yellow, 210px, 51px)
+        margin: 48px auto 
+        &:hover
+            +btnHover($black, white)
+    &__img
+        width: 52%
+        img
+            width: 95%
+            padding-left: 5%  
+.second-subblock
+    margin-bottom: 120px 
+    &__header
+        width: 30%
+        +header(bold, 48px, 62px, 3.10588px, uppercase, $blue)
+        text-align: left
+    &__info
+        display: flex
+        align-items: center
+        margin-left: 5%
+        width: 65%
+        background: $green
+        padding: 60px 48px 60px 48px
+        +text(normal, normal, 18px, 27px, 1.16471px, white)
+        text-align: left
+
+/*Fifth block*/
+
+.fifth-block
+    +bgPhotoBlock(519px)
+    img
+        +bgPhotoImg(0.72)
+    &__header
+        +header(normal, 38px, 42px, 3.10588px, none, $blue)
+    &__subheader
+        +text(normal, bold, 18px, 27px, 1.16471px, $black)
+        margin: 32px 0 24px 0
+    &__btn
+        +btn($yellow, white, 256px, 51px)
+        margin: 0 auto
+        &:hover
+            +btnHover($black, white)
+    

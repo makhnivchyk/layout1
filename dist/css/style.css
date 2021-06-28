@@ -687,11 +687,11 @@ a {
   line-height: 27px;
   letter-spacing: 1.16471px;
   color: #1E1B18;
-  text-align: left;
-  color: grey;
   height: 76px;
   background: white;
   box-shadow: 0px 2px 4px #259B9A;
+  text-align: left;
+  padding-left: 10px;
 }
 
 .form__btn {
@@ -711,6 +711,7 @@ a {
   width: 256px;
   height: 51px;
   justify-self: center;
+  cursor: pointer;
 }
 
 .form__btn:hover {
@@ -1058,7 +1059,7 @@ a {
   object-position: center;
   z-index: -1;
   background: url("/img/B/backgroung.png");
-  opacity: 0.44;
+  opacity: 0.66;
 }
 
 .intro__header {
@@ -1194,6 +1195,252 @@ a {
   margin: 16px 0;
 }
 
+/*Third block*/
+
+.third-block {
+  padding: 80px 0;
+  background: #0D9EDF;
+}
+
+.third-block__header {
+  font-family: "Helvetica";
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 62px;
+  letter-spacing: 3.10588px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.third-block__items {
+  margin: 60px 0 32px 0;
+}
+
+.third-block__item {
+  font-family: "Georgia";
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 1.16471px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.third-block__btn {
+  box-sizing: border-box;
+  border-radius: 25.5px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: bold !important;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 1.16471px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 1px solid #FDC525;
+  width: 87px;
+  height: 51px;
+  margin: 0 auto;
+}
+
+.third-block__btn:hover {
+  background: #1E1B18;
+  color: white;
+}
+
+/*Fourth block*/
+
+.fourth-block__header {
+  font-family: "Helvetica";
+  font-style: normal;
+  text-align: center;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 62px;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  color: #259B9A;
+  margin: 160px 0 120px 0;
+  font-size: calc(48px + 32 *(100vw/1440));
+}
+
+.fourth-block__first-subblock {
+  display: flex;
+  margin-bottom: 120px;
+}
+
+.fourth-block__second-subblock {
+  display: flex;
+}
+
+.first-subblock__info {
+  width: 48%;
+}
+
+.first-subblock__text {
+  width: 100%;
+  font-family: "Georgia";
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 1.16471px;
+  color: #1E1B18;
+  text-align: left;
+}
+
+.first-subblock__btn {
+  box-sizing: border-box;
+  border-radius: 25.5px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: bold !important;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 1.16471px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 1px solid #FDC525;
+  width: 210px;
+  height: 51px;
+  margin: 48px auto;
+}
+
+.first-subblock__btn:hover {
+  background: #1E1B18;
+  color: white;
+}
+
+.first-subblock__img {
+  width: 52%;
+}
+
+.first-subblock__img img {
+  width: 95%;
+  padding-left: 5%;
+}
+
+.second-subblock {
+  margin-bottom: 120px;
+}
+
+.second-subblock__header {
+  width: 30%;
+  font-family: "Helvetica";
+  font-style: normal;
+  text-align: center;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 62px;
+  letter-spacing: 3.10588px;
+  text-transform: uppercase;
+  color: #0D9EDF;
+  text-align: left;
+}
+
+.second-subblock__info {
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  width: 65%;
+  background: #259B9A;
+  padding: 60px 48px 60px 48px;
+  font-family: "Georgia";
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 1.16471px;
+  color: white;
+  text-align: left;
+}
+
+/*Fifth block*/
+
+.fifth-block {
+  position: relative;
+  z-index: 1;
+  height: 519px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.fifth-block img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  z-index: -1;
+  background: url("/img/B/backgroung.png");
+  opacity: 0.72;
+}
+
+.fifth-block__header {
+  font-family: "Helvetica";
+  font-style: normal;
+  text-align: center;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 42px;
+  letter-spacing: 3.10588px;
+  text-transform: none;
+  color: #0D9EDF;
+}
+
+.fifth-block__subheader {
+  font-family: "Georgia";
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 1.16471px;
+  color: #1E1B18;
+  margin: 32px 0 24px 0;
+}
+
+.fifth-block__btn {
+  box-sizing: border-box;
+  border-radius: 25.5px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: bold !important;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 1.16471px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FDC525;
+  border: 1px solid white;
+  width: 256px;
+  height: 51px;
+  margin: 0 auto;
+}
+
+.fifth-block__btn:hover {
+  background: #1E1B18;
+  color: white;
+}
+
 @media (max-width: 613px) {
   .intro__header {
     font-family: "Helvetica";
@@ -1255,7 +1502,6 @@ a {
   content: "\e902";
   color: #fdc525;
 }
-
 /*Helvetica*/
 
 @font-face {
@@ -2725,6 +2971,10 @@ table {
   .container .service__header_second {
     text-align: center;
   }
+
+  .container .second-subblock__header {
+    font-size: 36px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2742,6 +2992,44 @@ table {
 
   .container .first-block__form {
     margin-top: 50px;
+  }
+
+  .container .first-subblock,
+  .container .second-subblock {
+    flex-direction: column;
+  }
+
+  .container .fourth-block__header {
+    margin: 80px 0 40px 0;
+  }
+
+  .container .first-subblock {
+    margin-bottom: 60px;
+  }
+
+  .container .first-subblock__info {
+    width: 100%;
+  }
+
+  .container .first-subblock__img {
+    width: 100%;
+  }
+
+  .container .first-subblock__img img {
+    width: 100%;
+    padding: 0;
+  }
+
+  .container .second-subblock__header {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .container .second-subblock__info {
+    width: 80%;
+    padding: 25px;
+    margin: 0 auto;
   }
 }
 
