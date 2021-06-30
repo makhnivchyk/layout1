@@ -1,0 +1,199 @@
+@import "_variables"
+@import "_mixins"
+
+/*Header*/
+
+header
+    background: $blue
+.header
+    display: flex
+    flex-wrap: nowrap
+    justify-content: space-between
+    align-items: center
+    &__left-info
+        padding: 25px 0
+        width: 33.333%
+        display: flex
+        flex-direction: column
+        flex-wrap: nowrap
+        justify-content: flex-start
+        align-items: center
+    &__address
+        a
+            +text(normal, normal, 18px, 27px, 1.16471px, white !important)
+            text-align: center
+    &__logo
+        width: 33.333%
+        display: flex
+        justify-content: center
+        img
+            height: 100%
+    &__right-info
+        padding: 25px 0
+        width: 33.333%
+        display: flex
+        flex-direction: column
+        flex-wrap: nowrap
+        justify-content: flex-end
+        align-items: flex-end
+        a
+            +text(normal, normal, 18px, 27px, 1.16471px, white !important)
+            text-align: center
+        a:nth-child(1)
+            margin: 0 10px 16px 0 
+             
+    &__icons
+        margin-bottom: 16px
+        font-size: 20px 
+    &__burger
+        display: none
+
+/*Navigation*/
+
+.nav
+    max-height: 8%
+    &__arrow::after
+        display: inline-block
+        margin-left: 7px
+        content: "\25BC"
+        color: $yellow
+        transform: rotate(-90deg)
+    &__sub-arrow::after
+        display: inline-block
+        margin-left: 7px
+        content: "\25BC"
+        color: $yellow
+        transform: rotate(0deg)
+    li
+        position: relative 
+    &__list
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        justify-content: space-between
+        align-items: center
+        padding: 15px 0
+        li:hover
+            .nav__arrow::after
+                transform: rotate(0deg)
+            .nav__sub-list 
+                display: block
+    &__link
+        +header(bold, 18px, 27px, 1.16471px, uppercase, $green)
+    &__btn
+        +btn($yellow, white, 255px, 51px)
+        color: $black !important
+        font-style: bold 
+        &:hover
+            +btnHover($black, white !important)
+    &__sub-list
+        margin-top: 20px
+        li  
+            position: relative
+            margin-bottom: 8px
+        li:hover
+            .nav__sub-link
+                color: $yellow
+            .nav__sub-arrow::after
+                transform: rotate(-90deg)
+            .nav__sub-sub-list
+                display: block
+        z-index: 10
+        display: none
+        position: absolute
+        top: 0
+        left: 0
+        padding: 20px 20px 0 0
+    &__sub-link
+        +header(bold, 14px, 23px, 0.905882px, uppercase, $green)
+        &:nth-last-child()
+            margin-bottom: 0px
+    &__sub-sub-link
+        +header(bold, 14px, 23px, 0.905882px, uppercase, $green)
+        &:nth-last-child()
+            margin-bottom: 0px
+    &__wrapper
+        background: $submenu
+        padding: 16px 0 16px 16px
+        min-width: 280px
+        mix-blend-mode: normal
+        opacity: 0.89 
+        border-radius: 19px 
+    &__sub-wrapper
+        background: $submenu
+        padding: 16px
+        min-width: 280px
+        mix-blend-mode: normal
+        opacity: 0.89 
+        border-radius: 19px       
+    &__sub-sub-list
+        padding: 0 0 0 20px
+        z-index: 11
+        display: none
+        position: absolute
+        bottom: 0 - 20px
+        left: 95%
+        li:hover
+            .nav__sub-sub-link
+                color: $yellow 
+
+/*Burger*/
+
+.header
+    &__burger
+        display: none
+        position: relative
+        width: 30px
+        height: 20px
+        &::before, &::after
+            content: ""
+            background-color: $yellow
+            position: absolute
+            width: 100%
+            height: 2px
+            left: 0
+        &::before
+            top: 0
+        &::after
+            bottom: 0
+        span
+            background-color: $yellow
+            position: absolute
+            width: 100%
+            height: 2px
+            left: 0
+            top: 10px
+.header__burger.open-menu span 
+    opacity: 0
+    transition: 0.5s 
+.header__burger.open-menu:before 
+    transform: rotate(38deg)
+    top: 10px
+    transition: 0.4s
+.header__burger.open-menu:after 
+    transform: rotate(-38deg)
+    bottom: 8px
+    transition: 0.4s
+.nav.open-menu
+    display: block !important
+    height: 100vh
+    overflow: scroll
+.nav__list.open-menu
+    flex-direction: column
+    align-items: flex-start
+    justify-content: center
+.nav__list.open-menu
+    font-size: 24px
+    li
+        margin-bottom: 40px
+.nav__link.open-menu
+    font-size: 24px
+.nav__sub-list.open-menu
+    li
+        margin-bottom: 4px
+.nav__sub-sub-list.open-menu
+    top: 10px
+    left: 0 
+
+
+    

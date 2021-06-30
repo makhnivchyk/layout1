@@ -23,6 +23,14 @@
         max-width: 970px     
     @media(max-width: $md2 + px)
         max-width: 700px
+        .header
+            padding: 25px 0
+            &__logo
+                img
+                    min-height: 0
+        .nav
+            &__btn
+                display: none
         +formSmaller
         .hide
             display: none
@@ -46,6 +54,11 @@
                 font-size: 36px
     @media(max-width: $md3 + px)
         max-width: 500px
+        .header
+            &__burger
+                display: block
+        .nav
+            display: none
         .footer
             &__btn
                 display: none
@@ -54,6 +67,8 @@
                 flex-direction: column
             &__form
                 margin-top: 50px
+            &__header
+                margin-top: 0
         .first-subblock, .second-subblock
             flex-direction: column
         .fourth-block
@@ -77,7 +92,27 @@
                 width: 80%
                 padding: 25px
                 margin: 0 auto
+        .header
+            &__logo
+                width: 68%
+            &__left-info
+                width: 25%
+            &__burger
+                width: 7%
+            &__icons
+                margin-bottom: 0
+        .hide-header
+            display: none
     @media(max-width: $md4 + px)
+        .header
+            &__icons
+                display: none
+            &__logo
+                width: 90%
+            &__left-info
+                width: 0%
+            &__burger
+                width: 10%
         max-width: none
         padding: 0 20px
         .first-block

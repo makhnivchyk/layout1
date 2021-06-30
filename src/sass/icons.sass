@@ -1,31 +1,59 @@
 @font-face 
-    font-family: 'icons'
-    src:  url('/fonts/icons.eot?xlvnxk')
-    src:  url('/fonts/icons.eot?xlvnxk#iefix') format('embedded-opentype'), url('/fonts/icons.ttf?xlvnxk') format('truetype'), url('/fonts/icons.woff?xlvnxk') format('woff'), url('/fonts/icons.svg?xlvnxk#icons') format('svg')
-    font-weight: normal
-    font-style: normal
-    font-display: block
+  font-family: 'icons'
+  src:  url('/fonts/icons.eot?q169de')
+  src:  url('/fonts/icons.eot?q169de#iefix') format('embedded-opentype'), url('/fonts/icons.ttf?q169de') format('truetype'), url('/fonts/icons.woff?q169de') format('woff'), url('/fonts/icons.svg?q169de#icons') format('svg')
+  font-weight: normal
+  font-style: normal
+  font-display: block
 
 [class^="icon-"]::before, [class*=" icon-"]::before 
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icons' !important
-    speak: never
-    font-style: normal
-    font-weight: normal
-    font-variant: normal
-    text-transform: none
-    line-height: 1
-    font-size: 1.5rem
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important
+  speak: never
+  font-style: normal
+  font-weight: normal
+  font-variant: normal
+  text-transform: none
+  line-height: 1
 
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.icon-arrow-down:after 
+  content: "\e900"
+  color: #fdc525
+
+.icon-arrow-left:after 
+  content: "\e901"
+  color: #fdc525
+
+.icon-email:before 
+  content: "\e902"
+  color: #fdc525
+  margin-right: 16px
+  margin-top: 16px
 
 .icon-facebook:before 
-    content: "\e900"
-    color: #fdc525
+  content: "\e903"
+  color: #fdc525
 
 .icon-instagram:before 
-    content: "\e901"
-    color: #fdc525
+  content: "\e904"
+  color: #fdc525
+  margin-right: 16px
+
+.icon-location:before 
+  content: "\e905"
+  color: #fdc525
+  margin-right: 16px
+
+.icon-phone:before 
+  content: "\e906"
+  color: #fdc525
+  margin-right: 16px
 
 .icon-twitter:before 
-    content: "\e902"
-    color: #fdc525
+  content: "\e907"
+  color: #fdc525
+  margin-right: 16px
