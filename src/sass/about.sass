@@ -1,0 +1,94 @@
+@import "_variables"
+@import "_mixins"
+    
+/*ABOUT*/
+
+.about
+    &-intro
+        margin: 120px 0
+        %flex-column-center
+        &__header
+            +header(normal, 48px, 42px, center, none, $blue)
+        &__img
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            // width: 100%
+            margin: 60px 0
+            img
+                width: 714.94px
+        &__text
+            +text(normal, normal, 18px, 27px, 1.16471px, $black)
+            text-align: left
+    &-items-with-info
+        %flex-column-center
+        margin-bottom: 120px
+        &__header
+            +header(normal, 48px, 42px, 3.10588px, none, $blue)
+            margin-bottom: 64px
+        &__items
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            text-align: center
+        &__item
+            flex-basis: 30%
+    &-items
+        %flex-column-center
+        margin-bottom: 120px
+        &__header
+            +header(normal, 48px, 42px, 3.10588px, none, $blue)
+            margin-bottom: 70px
+        &__items
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            text-align: center
+            width: 100%
+        &__item
+            flex-basis: 23%
+    &-yellow-block-wrapper__header
+        +header(300, 40px, 42px, 3.10588px, none, white)
+        text-align: center
+        margin-bottom: 24px
+.items-with-info
+    &__item
+        margin: 0 auto 
+    &__img
+        width: 100% 
+    &__header
+        +header(bold, 24px, 20px, 1.55294px, uppercase, $green)
+        margin: 24px 0 16px 0
+        text-align: left
+    &__subheader
+        +text(normal, bold, 18px, 27px, 1.16471px, $black)
+        text-align: left
+        margin-bottom: 30px
+    &__info
+        +text(normal, normal, 18px, 27px, 1.16471px, $black)
+        text-align: left
+.items
+    &__item
+        margin: 0 auto 
+    &__img
+        width: 100% 
+    &__header
+        +header(bold, 21px, 20px, 1.55294px, uppercase, $green)
+        margin: 24px 0 16px 0
+        text-align: left
+    &__subheader
+        +text(normal, bold, 18px, 27px, 1.16471px, $black)
+        text-align: left
+        margin-bottom: 30px
+
+%flex-column-center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+%flex-row-wrap
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
