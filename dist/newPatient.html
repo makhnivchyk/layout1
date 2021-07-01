@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head lang="en">
-    <title>About</title>
+    <title>New Patient</title>
     <link rel="stylesheet" href="/css/style.min.css">
     <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
@@ -85,134 +85,128 @@
 </nav>
         <div class="name-block">
     <div class="container">
-        <h1 class="name-block__header">About</h1>
+        <h1 class="name-block__header">New Patient</h1>
     </div>
 </div>
         <div class="container">
-            <div class="about-intro">
-                <h2 class="about-intro__header">
-                    Welcome to The Practive Name!
+            <div class="new-patient-first-block">
+                <h2 class="new-patient-first-block__header">
+                    What to expect
                 </h2>
-                <div class="about-intro__img">
-                    <img src="/img/B/home_doctors.png" alt="">
-                </div>
-                <div class="about-intro__text">
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p> 
-                </div>
-            </div>
-            <div class="about-items-with-info">
-                <h3 class="about-items-with-info__header">
-                    Meet our doctors
-                </h3>
-                <div class="about-items-with-info__items">
-                    <div class="about-items-with-info__item items-with-info__item">
-                        <div class="items-with-info__img">
-                            <img src="/img/B/doctor.png" alt="">
+                <div class="new-patient-first-block__block">
+                    <div class="new-patient-first-block__firstsubblock">
+                        <div class="new-patient-first-block__photo">
+                            <img src="/img/B/home_doctors.png" alt="">
                         </div>
-                        <div class="items-with-info__header">
-                            Dr. First Last Name
-                        </div>
-                        <div class="items-with-info__subheader">
-                            General Dentist
-                        </div>
-                        <div class="items-with-info__info">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                        <div class="new-patient-first-block__text">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p> 
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
                         </div>
                     </div>
-                    <div class="about-items-with-info__item items-with-info__item">
-                        <div class="items-with-info__img">
-                            <img src="/img/B/doctor.png" alt="">
+                    <div class="new-patient-first-block__secondsubblock">
+                        <div class="new-patient-first-block__form">
+                            <form action="" class="form">
+    <div class="box form__header header">
+        Appointment Request:
+    </div>
+    <fieldset class="start box form__checkbox firstCheckout">
+        <input type="checkbox" id="firstCheckout" name="firstCheckout" value="firstCheckout">
+        <label for="firstCheckout">New patient</label>
+    </fieldset>
+    <fieldset class="start form__checkbox secondCheckout">
+        <input type="checkbox" id="secondCheckout" name="secondCheckout" value="secondCheckout">
+        <label for="secondCheckout">Existing Patient</label>
+    </fieldset>
+    <input class="box form__input name" type="text" id="name" name="name" placeholder="First and Last Name *">
+    <input class="box form__input email" type="email" id="email" name="email" placeholder="Email *">
+    <input class="box form__input phone" type="tel" id="phone" name="phone" placeholder="Phone *">
+    <input class="box form__input serviceType" type="text" id="service" name="service" placeholder="Service Type*">
+    <input class="box form__input day" type="text" id="day" name="day" placeholder="Preffered Day*">
+    <fieldset class="box time">
+        <fieldset class="form__checkbox time__width">
+            <input type="checkbox" id="time1" name="time1" value="time1">
+            <label for="time1">8AM - 12PM</label>
+        </fieldset>
+        <fieldset class="form__checkbox time__width">
+            <input type="checkbox" id="time2" name="time2" value="time2">
+            <label for="time2">12PM - 4PM</label>
+        </fieldset>
+        <fieldset class="form__checkbox time__width">
+            <input type="checkbox" id="time3" name="time3" value="time3">
+            <label for="time3">4PM - 7PM</label>
+        </fieldset>
+    </fieldset>
+    <textarea class="box form__textarea message" name="message" placeholder="Message"></textarea>
+    <input class="box form__btn submit" type="submit" value="Book an appointment">
+</form>
                         </div>
-                        <div class="items-with-info__header">
-                            Dr. First Last Name
+                        <div class="new-patient-first-block__btns">
+                            <a class="new-patient-first-block__btn_first">
+                                New Patient Form
+                            </a>
+                            <a class="new-patient-first-block__btn_second">
+                                Form #2
+                            </a>
                         </div>
-                        <div class="items-with-info__subheader">
-                            General Dentist
-                        </div>
-                        <div class="items-with-info__info">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-                        </div>
-                    </div>
-                    <div class="about-items-with-info__item items-with-info__item">
-                        <div class="items-with-info__img">
-                            <img src="/img/B/doctor.png" alt="">
-                        </div>
-                        <div class="items-with-info__header">
-                            Dr. First Last Name
-                        </div>
-                        <div class="items-with-info__subheader">
-                            General Dentist
-                        </div>
-                        <div class="items-with-info__info">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="about-items">
-                <div class="about-items__header">
-                    Meet our team
-                </div>
-                <div class="about-items__items">
-                    <div class="about-items__item items__item">
-                        <div class="items__img">
-                            <img src="/img/B/medsister.png" alt="">
-                        </div>
-                        <div class="items__header">
-                            First Last Name
-                        </div>
-                        <div class="items__subheader">
-                            Hygenist
-                        </div>
-                    </div>
-                    <div class="about-items__item items__item">
-                        <div class="items__img">
-                            <img src="/img/B/medsister.png" alt="">
-                        </div>
-                        <div class="items__header">
-                            First Last Name
-                        </div>
-                        <div class="items__subheader">
-                            Hygenist
-                        </div>
-                    </div>
-                    <div class="about-items__item items__item">
-                        <div class="items__img">
-                            <img src="/img/B/medsister.png" alt="">
-                        </div>
-                        <div class="items__header">
-                            First Last Name
-                        </div>
-                        <div class="items__subheader">
-                            Hygenist
-                        </div>
-                    </div>
-                    <div class="about-items__item items__item">
-                        <div class="items__img">
-                            <img src="/img/B/medsister.png" alt="">
-                        </div>
-                        <div class="items__header">
-                            First Last Name
-                        </div>
-                        <div class="items__subheader">
-                            Hygenist
+                        <div class="new-patient-first-block__hours">
+                            <div class="first-block__hours">
+    <div class="first-block__header_hours">
+        Office Hours:
+    </div>
+    <div class="first-block__items">
+        <div class="first-block__item">Monday: 8AM-5PM</div>
+        <div class="first-block__item">Tuesday: 8AM-5PM</div>
+        <div class="first-block__item">Wednesday: 8AM-5PM</div>
+        <div class="first-block__item">Thursday: 8AM-5PM</div>
+        <div class="first-block__item">Friday: 9AM-5PM</div>
+        <div class="first-block__item">Saturday: 12PM-5PM</div>
+        <div class="first-block__item">Sunday: Closed</div>
+    </div>
+</div>
                         </div>
                     </div>
                 </div>
-            </div> 
-        </div>
-        <div class="yellow-block">
-            <div class="container">
-                <div class="yellow-block-wrapper">
-                    <h2 class="about-yellow-block-wrapper__header">
-                        Our team of caring, friendly and highly experienced dental professionals are here for you!
-                    </h2>
-                    <a href="#" class="yellow-block-wrapper__btn">
-                        Book an appointment
-                    </a>
-                </div>
+                
             </div>
         </div>
+        <div class="other-services">
+    <h2 class="new-patient-other-services__header">
+        Explore our Services:
+    </h2>
+    <div class="other-services__items">
+        <div class="item">
+            <img src="/img/B/category_1.png" class="item__image" alt="">
+            <h3 class="item__header">Service Category</h3>
+            <a href="#" class="item__btn">Learn More</a>
+        </div>
+        <div class="item">
+            <img src="/img/B/category_2.png" class="item__image" alt="">
+            <h3 class="item__header">Service Category</h3>
+            <a href="#" class="item__btn">Learn More</a>
+        </div>
+        <div class="item">
+            <img src="/img/B/category_3.png" class="item__image" alt="">
+            <h3 class="item__header">Service Category</h3>
+            <a href="#" class="item__btn">Learn More</a>
+        </div>
+        <div class="item">
+            <img src="/img/B/category_4.png" class="item__image" alt="">
+            <h3 class="item__header">Service Category</h3>
+            <a href="#" class="item__btn">Learn More</a>
+        </div>
+        <div class="item">
+            <img src="/img/B/category_5.png" class="item__image" alt="">
+            <h3 class="item__header">Service Category</h3>
+            <a href="#" class="item__btn">Learn More</a>
+        </div>
+        <div class="item">
+            <img src="/img/B/category_6.png" class="item__image" alt="">
+            <h3 class="item__header">Service Category</h3>
+            <a href="#" class="item__btn">Learn More</a>
+        </div>
+    </div>
+</div>
         <footer>
     <div class="footer__wrapper">
         <div class="container">

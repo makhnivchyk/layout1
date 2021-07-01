@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('_head.html', {
+        "title":"New Patient"
+    })
+    <body>
+        @@include('_header.html', {})
+        @@include('_nameBlock.html', {
+            "header": "New Patient"
+        })
+        <div class="container">
+            <div class="new-patient-first-block">
+                <h2 class="new-patient-first-block__header">
+                    What to expect
+                </h2>
+                <div class="new-patient-first-block__block">
+                    <div class="new-patient-first-block__firstsubblock">
+                        <div class="new-patient-first-block__photo">
+                            <img src="/img/B/home_doctors.png" alt="">
+                        </div>
+                        <div class="new-patient-first-block__text">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p> 
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                        </div>
+                    </div>
+                    <div class="new-patient-first-block__secondsubblock">
+                        <div class="new-patient-first-block__form">
+                            @@include('_form.html')
+                        </div>
+                        <div class="new-patient-first-block__btns">
+                            <a class="new-patient-first-block__btn_first">
+                                New Patient Form
+                            </a>
+                            <a class="new-patient-first-block__btn_second">
+                                Form #2
+                            </a>
+                        </div>
+                        <div class="new-patient-first-block__hours">
+                            @@include('_officeHours.html')
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        @@include('_otherServices.html', {
+            "header":"Explore our Services:",
+            "classes": "new-patient-other-services__header"
+        })
+        @@include('_footer.html', {})
+    </body>
+</html>

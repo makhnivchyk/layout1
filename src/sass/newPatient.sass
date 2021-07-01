@@ -1,0 +1,52 @@
+@import "_variables"
+@import "_mixins"
+
+.new-patient
+    &-other-services
+        &__header
+            +header(bold, 24px, 23px, 1.55294px, uppercase, $green)
+            margin: 100px 0 90px 0
+    &-first-block
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        &__header
+            +header(normal, 48px, 42px, 3.10588px, none, $blue)
+            margin: 120px 0 60px 0
+        &__block
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            text-align: center
+        &__firstsubblock
+            flex-basis: 57% 
+        &__photo
+            margin-bottom: 60px
+            img
+                width: 100%
+        &__text 
+            +text(normal, normal, 18px, 27px, 1.16471px, $black)
+            text-align: left
+            p
+                margin: 15px 0
+        &__secondsubblock
+            flex-basis: 38% 
+        &__form
+            +formSmaller 
+        &__btns
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &__btn  
+            &_first
+                +btn(white, $yellow, 219px, 51px)
+                margin-top: 60px
+                &:hover
+                    +btnHover($black, white)
+            &_second
+                +btn(white, $yellow, 120px, 51px)
+                margin: 30px 0
+                &:hover
+                    +btnHover($black, white) 
