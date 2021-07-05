@@ -4904,6 +4904,7 @@ body.lock {
   line-height: 27px;
   letter-spacing: 1.16471px;
   color: #1E1B18;
+  text-align: left;
 }
 
 .service__text p {
