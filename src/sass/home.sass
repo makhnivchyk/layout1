@@ -14,13 +14,13 @@
         +bgPhotoImg(0.66)
     &__header
         +header(bold, 80px, 80px, 20px, uppercase, $green)
-        @media(max-width: 613px)
-            +header(bold, 50px, 80px, 10px, uppercase, $green)
+        font-size: calc(24px + 56 *(100vw/1440))
+        letter-spacing: calc(5px + 15 *(100vw/1440))
     &__subheader
         +header(normal, 48px, 42px, 3.10588px, none, $blue)
+        font-size: calc(20px + 28 *(100vw/1440))
+        letter-spacing: calc(1px + 2 *(100vw/1440))
         margin: 60px 0
-        @media(max-width: 613px)
-            +header(normal, 36px, 32px, 3.10588px, none, $blue)
     &__btn
         +btn(white, $yellow, 124px, 51px) 
         &:hover
@@ -38,13 +38,22 @@
         +header(bold, 48px, 62px, 3.10588px, uppercase, $green)
         margin-top: 120px    
         margin-bottom: 59px
+        font-size: calc(24px + 24 *(100vw/1440))
+        letter-spacing: calc(1px + 2 *(100vw/1440))
+        line-height: calc(30px + 32 *(100vw/1440))
         &_hours
             +header(bold, 24px, 23px, 1.55294px, uppercase, $green)
+            font-size: calc(18px + 6 *(100vw/1440))
+            letter-spacing: calc(1px + 0.5 *(100vw/1440))
+            line-height: calc(18px + 5 *(100vw/1440))
             margin-bottom: 16px
     &__text
         +text(normal, normal, 18px, 27px, 1.16471px, $black) 
         text-align: left
         margin-bottom: 60px
+        font-size: calc(16px + 2 *(100vw/1440))
+        letter-spacing: calc(1px + 0.1 *(100vw/1440))
+        line-height: calc(20px + 7 *(100vw/1440))
         p
             margin: 15px auto
     &__info
@@ -62,6 +71,9 @@
         flex-basis: 50% 
     &__item
         +text(italic, 600, 18px, 27px, 1.16471px, $blue)
+        font-size: calc(16px + 2 *(100vw/1440))
+        letter-spacing: calc(1px + 0.1 *(100vw/1440))
+        line-height: calc(20px + 7 *(100vw/1440))
         margin: 16px 0
 
 .hide-hours-header
@@ -74,10 +86,14 @@
     background: $blue
     &__header
         +header(500, 48px, 62px, 3.10588px, uppercase, white)
+        font-size: calc(24px + 24 *(100vw/1440))
+        letter-spacing: calc(1px + 2 *(100vw/1440))
     &__items
         margin: 60px 0 32px 0
     &__item
         +text(italic, bold, 18px, 27px, 1.16471px, black)
+        font-size: calc(16px + 2 *(100vw/1440))
+        letter-spacing: calc(1px + 2 *(100vw/1440))
         margin-bottom: 20px
     &__btn
         +btn(white, $yellow, 87px, 51px)
@@ -90,8 +106,9 @@
 .fourth-block
     &__header
         +header(bold, 80px, 62px, 20px, uppercase, $green)
-        margin: 160px 0 120px 0 
-        font-size: calc(48px + 32 *(100vw/1440))    
+        font-size: calc(24px + 56 *(100vw/1440))
+        letter-spacing: calc(10px + 10 *(100vw/1440))
+        margin: 160px 0 120px 0    
     &__first-subblock
         display: flex
         margin-bottom: 120px
@@ -104,6 +121,8 @@
         width: 100%
         +text(normal, normal, 18px, 27px, 1.16471px, $black)
         text-align: left
+        font-size: calc(16px + 2 *(100vw/1440))
+        letter-spacing: calc(1px + 2 *(100vw/1440))
     &__btn
         +btn(white, $yellow, 210px, 51px)
         margin: 48px auto 
@@ -120,6 +139,8 @@
         width: 30%
         +header(bold, 48px, 62px, 3.10588px, uppercase, $blue)
         text-align: left
+        font-size: calc(24px + 24 *(100vw/1440))
+        letter-spacing: calc(1px + 2 *(100vw/1440))
     &__info
         display: flex
         align-items: center
@@ -128,6 +149,8 @@
         background: $green
         padding: 60px 48px 60px 48px
         +text(normal, normal, 18px, 27px, 1.16471px, white)
+        font-size: calc(16px + 2 *(100vw/1440))
+        letter-spacing: calc(1px + 0.1 *(100vw/1440))
         text-align: left
 
 /*Fifth block*/
@@ -138,8 +161,12 @@
         +bgPhotoImg(0.72)
     &__header
         +header(normal, 38px, 42px, 3.10588px, none, $blue)
+        font-size: calc(24px + 14 *(100vw/1440))
+        letter-spacing: calc(1px + 2 *(100vw/1440))
     &__subheader
         +text(normal, bold, 18px, 27px, 1.16471px, $black)
+        font-size: calc(16px + 2 *(100vw/1440))
+        letter-spacing: calc(1px + 0.1 *(100vw/1440))
         margin: 32px 0 24px 0
     &__btn
         +btn($yellow, white, 256px, 51px)

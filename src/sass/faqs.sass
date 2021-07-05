@@ -7,9 +7,13 @@
         margin: 120px 0 85px 0 
         &__header
             +header(bold, 24px, 23px, 1.55294px, uppercase, $green)
+            font-size: calc(20px + 4 *(100vw/1440))
+            letter-spacing: calc(1px + 0.5 *(100vw/1440))
             margin-bottom: 50px
         &__text
             +text(italic, 700, 18px, 27px, 1.16471px, $black)
+            font-size: calc(16px + 2 *(100vw/1440))
+            letter-spacing: calc(1px + 0.1 *(100vw/1440))
             font-family: 'Lato', sans-serif
             p
                 margin-bottom: 20px
@@ -21,6 +25,8 @@
         &__line-wrapper
             padding: 32px 0
             +header(bold, 24px, 23px, 1.55294px, uppercase, black)
+            font-size: calc(20px + 4 *(100vw/1440))
+            letter-spacing: calc(1px + 0.5 *(100vw/1440))
             text-align: left
     &-third-block
         &__options
@@ -42,10 +48,14 @@
             width: 5%
         &__header
             +header(normal, 48px, 42px, 3.10588px, none, $blue)
+            font-size: calc(24px + 24 *(100vw/1440))
+            letter-spacing: calc(1px + 2 *(100vw/1440))
             text-align: left
             width: 95%
         &__text
             +text(normal, normal, 18px, 27px, 1.16471px, $black)
+            font-size: calc(16px + 2 *(100vw/1440))
+            letter-spacing: calc(1px + 0.1 *(100vw/1440))
             text-align: left
             margin-top: 15px
             width: 100%

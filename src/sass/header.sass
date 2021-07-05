@@ -279,3 +279,9 @@ header.active
     transition: 0s
 body.lock
     overflow: hidden
+
+@media(max-width: 320px)
+    .nav
+        &__btn
+            +btn($yellow, white, 200px, 70px)
+            text-align: center
