@@ -24,17 +24,24 @@
         height: 40px
         background: white
         box-shadow: 0px 2px 4px $green
-        +text(italic, normal, 18px, 27px, 1.16471px, $black)
+        +text(italic, normal, 18px, 27px, 1.16471px, $black !important)
         text-align: left
         padding-left: 10px
         border-color: white
+        outline: none
+        &:focus
+            box-shadow: 10px 5px 5px $black  
     &__textarea
-        +text(italic, normal, 18px, 27px, 1.16471px, $black)
+        +text(italic, normal, 18px, 27px, 1.16471px, $black !important)
         height: 76px
         background: white
         box-shadow: 0px 2px 4px $green
         text-align: left
-        padding-left: 10px
+        padding: 10px 0 0 10px
+        outline: none
+        &:focus
+            box-shadow: 10px 5px 5px $black 
+            transition: 0.1s
     &__btn
         +btn(white, white, 256px, 51px)
         justify-self: center
@@ -43,11 +50,12 @@
             +btnHover($black, white)
             border-color: $black !important
 .box
-    margin-bottom: 31px
+    margin-bottom: 24px
 .start
     justify-self: start
-.header
+.header-form
     grid-column: 1 / span 2
+    margin-bottom: 35px
 .secondCheckout
     margin-left: -30px
 .name
@@ -62,6 +70,11 @@
     justify-content: space-between
     &__width
         width: 145px
+    &3,
+    &2,
+    &1
+        display: flex
+        justify-content: flex-start
 .message
     grid-column: 1 / span 2
 .submit
@@ -71,3 +84,7 @@
     .form
         &__btn
             +btn(white, white, 230px, 51px)
+
+@media(max-width: 350px)
+    .form
+        display: none

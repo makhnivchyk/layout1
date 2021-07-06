@@ -17,8 +17,6 @@
 .container
     max-width: $maxWidthContainer + px
     margin: 0 auto
-    @media(min-width: $md5 + px)
-        max-width: 1500px
     @media(max-width: $md1 + px)
         max-width: 970px     
     @media(max-width: $md2 + px)
@@ -51,6 +49,17 @@
         .second-subblock
             &__header
                 font-size: 36px
+        .first-block
+            &__info
+                flex-direction: column
+            &__form
+                margin-top: 50px
+        .new-patient
+            &-first-block
+                &__block
+                    flex-direction: column
+                &__firstsubblock, &__secondsubblock
+                    flex-basis: 100%
     @media(max-width: $md3 + px)
         max-width: 500px
         .nav
@@ -59,13 +68,6 @@
         .footer
             &__btn
                 display: none
-        .first-block
-            &__info
-                flex-direction: column
-            &__form
-                margin-top: 50px
-            &__header
-                // margin-top: 0
         .first-subblock, .second-subblock
             flex-direction: column
         .fourth-block
@@ -100,12 +102,6 @@
                 margin-bottom: 0
         .hide-header
             display: none
-        .new-patient
-            &-first-block
-                &__block
-                    flex-direction: column
-                &__firstsubblock, &__secondsubblock
-                    flex-basis: 100%
     @media(max-width: $md4 + px)
         .header
             &__icons

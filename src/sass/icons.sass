@@ -1,3 +1,5 @@
+@import "_variables"
+
 @font-face 
   font-family: 'icons'
   src:  url('/fonts/icons.eot?wssdx2')
@@ -31,14 +33,22 @@
   margin-right: 16px
   margin-top: 16px
 
-.icon-facebook:before 
-  content: "\e902"
-  color: #fdc525
+.icon-facebook
+    color: #fdc525
+    &:before 
+        content: "\e902"
+    &:hover
+        color: $black
+        transition: 0.1s
 
-.icon-instagram:before 
-  content: "\e903"
-  color: #fdc525
-  margin-right: 16px
+.icon-instagram
+    color: #fdc525
+    &:before 
+        content: "\e903"
+        margin-right: 16px
+    &:hover
+        color: $black
+        transition: 0.1s
 
 .icon-location:before 
   content: "\e904"
@@ -55,7 +65,11 @@
   color: #fdc525
   margin-right: 16px
 
-.icon-twitter:before 
-  content: "\e907"
-  color: #fdc525
-  margin-right: 16px
+.icon-twitter
+    color: #fdc525
+    &:before 
+        content: "\e907"
+        margin-right: 16px
+    &:hover
+      color: $black
+      transition: 0.1s
