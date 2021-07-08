@@ -1549,9 +1549,9 @@ a {
 .footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   color: white;
-  padding: 48px 0;
+  padding-bottom: 48px;
 }
 
 .footer__wrapper {
@@ -1588,6 +1588,7 @@ a {
   height: 51px;
   color: #1E1B18 !important;
   font-style: bold;
+  margin: 0 auto;
 }
 
 .footer__btn:hover {
@@ -1611,6 +1612,23 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  flex-basis: 25%;
+  margin-top: 48px;
+}
+
+.footer__recources {
+  flex-basis: 25%;
+  margin-top: 48px;
+}
+
+.footer__office-hours {
+  flex-basis: 25%;
+  margin-top: 48px;
+}
+
+.footer__contact-us {
+  flex-basis: 25%;
+  margin-top: 48px;
 }
 
 .footer__info-item {
@@ -1642,16 +1660,34 @@ a {
   justify-content: space-between;
 }
 
-@media (max-width: 400px) {
-  .footer__company-name {
-    display: none;
+@media (max-width: 831px) {
+  .footer {
+    flex-wrap: wrap;
   }
 
+  .footer__company-name,
+  .footer__recources,
+  .footer__office-hours,
   .footer__contact-us {
-    width: 100%;
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 510px) {
+  .footer {
+    flex-wrap: wrap;
   }
 
-  .footer__icons {
+  .footer__company-name,
+  .footer__recources,
+  .footer__office-hours,
+  .footer__contact-us {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  __icons {
     width: 100%;
     justify-content: space-around;
   }
@@ -3788,7 +3824,7 @@ body.lock {
 }
 
 .icon-facebook {
-  color: #fdc525;
+  color: #fdc525 !important;
 }
 
 .icon-facebook:before {
@@ -3796,12 +3832,12 @@ body.lock {
 }
 
 .icon-facebook:hover {
-  color: #1E1B18;
+  color: #1E1B18 !important;
   transition: 0.1s;
 }
 
 .icon-instagram {
-  color: #fdc525;
+  color: #fdc525 !important;
 }
 
 .icon-instagram:before {
@@ -3810,7 +3846,7 @@ body.lock {
 }
 
 .icon-instagram:hover {
-  color: #1E1B18;
+  color: #1E1B18 !important;
   transition: 0.1s;
 }
 
@@ -3833,7 +3869,7 @@ body.lock {
 }
 
 .icon-twitter {
-  color: #fdc525;
+  color: #fdc525 !important;
 }
 
 .icon-twitter:before {
@@ -3842,7 +3878,7 @@ body.lock {
 }
 
 .icon-twitter:hover {
-  color: #1E1B18;
+  color: #1E1B18 !important;
   transition: 0.1s;
 }
 /*Helvetica*/
@@ -5728,10 +5764,6 @@ table {
   .container .day {
     grid-column: 1 / span 2;
     width: 60%;
-  }
-
-  .container .hide {
-    display: none;
   }
 
   .container .footer {

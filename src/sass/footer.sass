@@ -8,9 +8,9 @@ a
 .footer
     display: flex
     flex-direction: row
-    justify-content: space-between
+    justify-content: space-around
     color: white
-    padding: 48px 0
+    padding-bottom: 48px
     &__wrapper
         background-color: $blue
     &__header 
@@ -19,6 +19,7 @@ a
         +btn($yellow, white, 255px, 51px)
         color: $black !important
         font-style: bold 
+        margin: 0 auto
         &:hover
             +btnHover($black, white !important)
     &__icons
@@ -32,12 +33,20 @@ a
         display: flex
         flex-direction: column
         justify-content: space-evenly
+        flex-basis: 25%
+        margin-top: 48px
     &__recources
         @extend %flex-space-between
+        flex-basis: 25%
+        margin-top: 48px
     &__office-hours 
         @extend %flex-space-between
+        flex-basis: 25%
+        margin-top: 48px
     &__contact-us 
         @extend %flex-space-between
+        flex-basis: 25%
+        margin-top: 48px
     &__info
         @extend %flex-space-between
     &__info-item
@@ -54,11 +63,25 @@ a
     justify-content: space-between
 
 @media(max-width: 400px)
-    .footer
-        &__company-name
-            display: none
-        &__contact-us
-            width: 100%
         &__icons
             width: 100%
             justify-content: space-around
+
+@media(max-width: 831px)
+    .footer
+        flex-wrap: wrap
+        &__company-name,
+        &__recources,
+        &__office-hours,
+        &__contact-us
+            flex-basis: 50%
+            
+@media(max-width: 510px)
+    .footer
+        flex-wrap: wrap
+        &__company-name,
+        &__recources,
+        &__office-hours,
+        &__contact-us
+            flex-basis: 100%
+            
