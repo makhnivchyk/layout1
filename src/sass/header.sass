@@ -64,6 +64,42 @@ header
         margin-left: 10px
         color: $yellow
         transform: rotate(-90deg)
+//pc
+.nav__list li:hover.pc 
+    .nav__link
+        color: $yellow
+    .nav__sub-list 
+        display: block
+    .link__arrow::after
+        transform: rotate(-90deg)
+.nav__sub-list li:hover.pc 
+    .nav__sub-link 
+        color: $yellow
+    .link__sub-arrow::after
+        transform: rotate(0deg)
+    .nav__sub-sub-list
+        display: block
+.nav__sub-sub-list li:hover.pc
+    .nav__sub-sub-link 
+        color: $yellow 
+//endpc
+//mobile
+.nav__link.mobile 
+    color: $yellow
+.nav__sub-list.mobile  
+    display: block
+.link__arrow.mobile::after 
+    transform: rotate(-90deg)
+
+.nav__sub-link.mobile  
+    color: $yellow
+.link__sub-arrow.mobile::after 
+    transform: rotate(0deg)
+.nav__sub-sub-list.mobile 
+    display: block
+.nav__sub-sub-link.mobile 
+        color: $yellow     
+//end mobile
 .nav 
     &__list
         display: flex
@@ -72,13 +108,6 @@ header
         padding: 15px 0
         li
             position: relative
-        li:hover
-            .nav__link
-                color: $yellow
-            .nav__sub-list 
-                display: block
-            .link__arrow::after
-                transform: rotate(-90deg)
     &__link
         +header(bold, 18px, 27px, 1.16471px, uppercase, $green) 
     &__btn
@@ -108,13 +137,7 @@ header
             margin-bottom: 16px
             &:nth-last-child()
                 margin-bottom: 0px
-        li:hover
-            .nav__sub-link 
-                color: $yellow
-            .link__sub-arrow::after
-                transform: rotate(0deg)
-            .nav__sub-sub-list
-                display: block
+
     &__sub-link
         +header(bold, 14px, 23px, 0.905882px, uppercase, $green)
     &__sub-sub-list
@@ -127,9 +150,6 @@ header
             margin-bottom: 16px
             &:last-child
                 margin-bottom: 0px
-            &:hover
-                .nav__sub-sub-link 
-                    color: $yellow
         &-wrapper
             background-color: $submenu
             padding: 16px
@@ -189,13 +209,6 @@ header
         li
             margin-bottom: 30px
             position: relative
-        li:hover
-            .nav__link
-                color: $yellow
-            .nav__sub-list 
-                display: block
-            .link__arrow::after
-                transform: rotate(-90deg)
         &__link
             +header(bold, 24px, 27px, 1.16471px, uppercase, white)
         &__sub-list
@@ -213,13 +226,6 @@ header
             li
                 position: relative
                 margin-bottom: 0
-            li:hover
-                .nav__sub-link 
-                    color: $yellow
-                .link__sub-arrow::after
-                    transform: rotate(0deg)
-                .nav__sub-sub-list
-                    display: block
         &__sub-link
             +header(bold, 14px, 23px, 0.905882px, uppercase, $green)
         &__sub-sub-list
@@ -239,9 +245,6 @@ header
                 padding: 5px
             li
                 margin-bottom: 0
-                &:hover
-                    .nav__sub-sub-link 
-                        color: $yellow
         &__sub-sub-link 
             +header(bold, 14px, 23px, 0.905882px, uppercase, $blue)
         &__btn

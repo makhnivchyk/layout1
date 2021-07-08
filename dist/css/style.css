@@ -2473,6 +2473,62 @@ header {
   transform: rotate(-90deg);
 }
 
+.nav__list li:hover.pc .nav__link {
+  color: #FDC525;
+}
+
+.nav__list li:hover.pc .nav__sub-list {
+  display: block;
+}
+
+.nav__list li:hover.pc .link__arrow::after {
+  transform: rotate(-90deg);
+}
+
+.nav__sub-list li:hover.pc .nav__sub-link {
+  color: #FDC525;
+}
+
+.nav__sub-list li:hover.pc .link__sub-arrow::after {
+  transform: rotate(0deg);
+}
+
+.nav__sub-list li:hover.pc .nav__sub-sub-list {
+  display: block;
+}
+
+.nav__sub-sub-list li:hover.pc .nav__sub-sub-link {
+  color: #FDC525;
+}
+
+.nav__link.mobile {
+  color: #FDC525;
+}
+
+.nav__sub-list.mobile {
+  display: block;
+}
+
+.link__arrow.mobile::after {
+  transform: rotate(-90deg);
+}
+
+.nav__sub-link.mobile {
+  color: #FDC525;
+}
+
+.link__sub-arrow.mobile::after {
+  transform: rotate(0deg);
+}
+
+.nav__sub-sub-list.mobile {
+  display: block;
+}
+
+.nav__sub-sub-link.mobile {
+  color: #FDC525;
+}
+
 .nav__list {
   display: flex;
   justify-content: space-between;
@@ -2482,18 +2538,6 @@ header {
 
 .nav__list li {
   position: relative;
-}
-
-.nav__list li:hover .nav__link {
-  color: #FDC525;
-}
-
-.nav__list li:hover .nav__sub-list {
-  display: block;
-}
-
-.nav__list li:hover .link__arrow::after {
-  transform: rotate(-90deg);
 }
 
 .nav__link {
@@ -2565,18 +2609,6 @@ header {
   margin-bottom: 0px;
 }
 
-.nav__sub-list li:hover .nav__sub-link {
-  color: #FDC525;
-}
-
-.nav__sub-list li:hover .link__sub-arrow::after {
-  transform: rotate(0deg);
-}
-
-.nav__sub-list li:hover .nav__sub-sub-list {
-  display: block;
-}
-
 .nav__sub-link {
   font-family: "Helvetica";
   font-style: normal;
@@ -2603,10 +2635,6 @@ header {
 
 .nav__sub-sub-list li:last-child {
   margin-bottom: 0px;
-}
-
-.nav__sub-sub-list li:hover .nav__sub-sub-link {
-  color: #FDC525;
 }
 
 .nav__sub-sub-list-wrapper {
@@ -2748,18 +2776,6 @@ body.lock {
     position: relative;
   }
 
-  .nav li:hover .nav__link {
-    color: #FDC525;
-  }
-
-  .nav li:hover .nav__sub-list {
-    display: block;
-  }
-
-  .nav li:hover .link__arrow::after {
-    transform: rotate(-90deg);
-  }
-
   .nav__link {
     font-family: "Helvetica";
     font-style: normal;
@@ -2791,18 +2807,6 @@ body.lock {
   .nav__sub-list li {
     position: relative;
     margin-bottom: 0;
-  }
-
-  .nav__sub-list li:hover .nav__sub-link {
-    color: #FDC525;
-  }
-
-  .nav__sub-list li:hover .link__sub-arrow::after {
-    transform: rotate(0deg);
-  }
-
-  .nav__sub-list li:hover .nav__sub-sub-list {
-    display: block;
   }
 
   .nav__sub-link {
@@ -2838,10 +2842,6 @@ body.lock {
 
   .nav__sub-sub-list li {
     margin-bottom: 0;
-  }
-
-  .nav__sub-sub-list li:hover .nav__sub-sub-link {
-    color: #FDC525;
   }
 
   .nav__sub-sub-link {
