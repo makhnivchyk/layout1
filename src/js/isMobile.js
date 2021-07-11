@@ -14,7 +14,7 @@ $(document).ready(function() {
             $(this).parent().children('ul').toggleClass('mobile')
             $(this).toggleClass('mobile')
             $(document).mouseup(function (e) {
-                var container = $('.nav__sub-list');
+                let container = $('.nav__list li')
                 if (container.has(e.target).length === 0){
                     container.removeClass('mobile')
                     $('.nav__list li span').removeClass('mobile')
@@ -23,7 +23,7 @@ $(document).ready(function() {
                 }
             });
             $(document).mouseup(function (e) {
-                var container = $('.nav__sub-sub-list');
+                let container = $('.nav__sub-list li')
                 if (container.has(e.target).length === 0){
                     container.removeClass('mobile')
                     $('.nav__sub-list li span').removeClass('mobile')

@@ -214,12 +214,13 @@ header
         &__sub-list
             position: relative
             top: 0
-            left: 0
+            left: 10px
             display: none
-            background-color: white
+            background-color: transparent
             padding: 0
             overflow: auto
             &-wrapper
+                background-color: transparent
                 padding: 5px
                 min-width: 180px
                 border-radius: 0
@@ -227,7 +228,9 @@ header
                 position: relative
                 margin-bottom: 0
         &__sub-link
-            +header(bold, 14px, 23px, 0.905882px, uppercase, $green)
+            &:active
+                color: $yellow 
+            +header(bold, 14px, 23px, 0.905882px, uppercase, white)
         &__sub-sub-list
             display: none
             position: relative
@@ -236,7 +239,7 @@ header
             padding: 10px
             overflow: auto 
             &-wrapper
-                background-color: white
+                background-color: transparent
                 padding: 0
                 min-width: 0
                 mix-blend-mode: normal
@@ -245,8 +248,10 @@ header
                 padding: 5px
             li
                 margin-bottom: 0
-        &__sub-sub-link 
-            +header(bold, 14px, 23px, 0.905882px, uppercase, $blue)
+        &__sub-sub-link
+            &:active
+                color: $yellow 
+            +header(bold, 14px, 23px, 0.905882px, uppercase, white)
         &__btn
             +btn($yellow, white, 255px, 51px)
             font-style: bold

@@ -2827,14 +2827,15 @@ body.lock {
   .nav__sub-list {
     position: relative;
     top: 0;
-    left: 0;
+    left: 10px;
     display: none;
-    background-color: white;
+    background-color: transparent;
     padding: 0;
     overflow: auto;
   }
 
   .nav__sub-list-wrapper {
+    background-color: transparent;
     padding: 5px;
     min-width: 180px;
     border-radius: 0;
@@ -2854,7 +2855,11 @@ body.lock {
     line-height: 23px;
     letter-spacing: 0.90588px;
     text-transform: uppercase;
-    color: #259B9A;
+    color: white;
+  }
+
+  .nav__sub-link:active {
+    color: #FDC525;
   }
 
   .nav__sub-sub-list {
@@ -2867,7 +2872,7 @@ body.lock {
   }
 
   .nav__sub-sub-list-wrapper {
-    background-color: white;
+    background-color: transparent;
     padding: 0;
     min-width: 0;
     mix-blend-mode: normal;
@@ -2889,7 +2894,11 @@ body.lock {
     line-height: 23px;
     letter-spacing: 0.90588px;
     text-transform: uppercase;
-    color: #0D9EDF;
+    color: white;
+  }
+
+  .nav__sub-sub-link:active {
+    color: #FDC525;
   }
 
   .nav__btn {
@@ -3469,12 +3478,14 @@ body.lock {
   color: #259B9A;
   font-size: calc(24px + 56 *(100vw/1440));
   letter-spacing: calc(10px + 10 *(100vw/1440));
+  line-height: calc(30px + 48 *(100vw/1440));
   margin: 160px 0 120px 0;
 }
 
 .fourth-block__first-subblock {
   display: flex;
   margin-bottom: 120px;
+  justify-content: space-between;
 }
 
 .fourth-block__second-subblock {
@@ -3482,7 +3493,7 @@ body.lock {
 }
 
 .first-subblock__info {
-  width: 48%;
+  width: 48.73%;
 }
 
 .first-subblock__text {
@@ -3526,7 +3537,7 @@ body.lock {
 }
 
 .first-subblock__img {
-  width: 52%;
+  width: 48.64%;
 }
 
 .first-subblock__img img {
