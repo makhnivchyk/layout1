@@ -10,6 +10,8 @@ header
     flex-wrap: nowrap
     justify-content: space-between
     align-items: center
+    @media(max-width: $md4 + px)
+        padding: 10px 0 !important
     &__left-info
         padding: 25px 0
         width: 33.333%
@@ -28,6 +30,8 @@ header
         justify-content: center
         img
             height: 100%
+            @media(max-width: $md4 + px)
+                width: 200px
     &__right-info
         padding: 25px 0
         width: 33.333%
@@ -106,6 +110,8 @@ header
         justify-content: space-between
         align-items: center
         padding: 15px 0
+        @media(max-width: $md4 + px)
+            top: 100px
         li
             position: relative
     &__link

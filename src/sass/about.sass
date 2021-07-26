@@ -9,8 +9,9 @@
         %flex-column-center
         &__header
             +header(normal, 48px, 42px, 3.10588px, none, $blue)
-            font-size: calc(24px + 24 *(100vw/1440))
             letter-spacing: calc(1px + 2 *(100vw/1440))
+            @media(max-width: $md4 + px)
+                font-size: 32px !important
         &__img
             display: flex
             flex-direction: row
@@ -23,16 +24,18 @@
         &__text
             +text(normal, normal, 18px, 27px, 1.16471px, $black)
             text-align: left
-            font-size: calc(16px + 2 *(100vw/1440))
             letter-spacing: calc(1px + 0.1 *(100vw/1440))
+            @media(max-width: $md4 + px)
+                font-size: 16px !important
     &-items-with-info
         %flex-column-center
         margin-bottom: 120px
         &__header
             +header(normal, 48px, 42px, 3.10588px, none, $blue)
             margin-bottom: 64px
-            font-size: calc(24px + 24 *(100vw/1440))
             letter-spacing: calc(1px + 2 *(100vw/1440))
+            @media(max-width: $md4 + px)
+                font-size: 32px !important
         &__items
             display: flex
             flex-wrap: wrap
@@ -46,8 +49,9 @@
         &__header
             +header(normal, 48px, 42px, 3.10588px, none, $blue)
             margin-bottom: 70px
-            font-size: calc(24px + 24 *(100vw/1440))
             letter-spacing: calc(1px + 2 *(100vw/1440))
+            @media(max-width: $md4 + px)
+                font-size: 32px !important
         &__items
             display: flex
             flex-wrap: wrap
@@ -58,11 +62,13 @@
             flex-basis: 23%
     &-yellow-block-wrapper__header
         +header(300, 40px, 42px, 3.10588px, none, white)
-        font-size: calc(20px + 20 *(100vw/1440))
         letter-spacing: calc(1px + 2 *(100vw/1440))
-        line-height: calc(20px + 22 *(100vw/1440))
+        line-height: calc(30px + 12 *(100vw/1440))
         text-align: center
         margin-bottom: 24px
+        @media(max-width: $md4 + px)
+            font-size: 24px !important
+            font-weight: 400
 .items-with-info
     &__item
         margin: 0 auto 
@@ -70,19 +76,19 @@
         width: 100% 
     &__header
         +header(bold, 24px, 20px, 1.55294px, uppercase, $green)
-        font-size: calc(20px + 4 *(100vw/1440))
         letter-spacing: calc(1px + 0.5 *(100vw/1440))
         margin: 24px 0 16px 0
         text-align: left
     &__subheader
         +text(normal, bold, 18px, 27px, 1.16471px, $black)
-        font-size: calc(16px + 2 *(100vw/1440))
         letter-spacing: calc(1px + 0.1 *(100vw/1440))
         text-align: left
         margin-bottom: 30px
     &__info
         +text(normal, normal, 18px, 27px, 1.16471px, $black)
         text-align: left
+        @media(max-width: $md4 + px)
+            font-size: 16px !important
 .items
     &__item
         margin: 0 auto 
@@ -90,13 +96,11 @@
         width: 100% 
     &__header
         +header(bold, 21px, 20px, 1.55294px, uppercase, $green)
-        font-size: calc(18px + 3 *(100vw/1440))
         letter-spacing: calc(1px + 0.5 *(100vw/1440))
         margin: 24px 0 16px 0
         text-align: left
     &__subheader
         +text(normal, bold, 18px, 27px, 1.16471px, $black)
-        font-size: calc(16px + 2 *(100vw/1440))
         letter-spacing: calc(1px + 0.1 *(100vw/1440))
         text-align: left
         margin-bottom: 30px

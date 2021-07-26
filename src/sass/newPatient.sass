@@ -5,7 +5,6 @@
     &-other-services
         &__header
             +header(bold, 24px, 23px, 1.55294px, uppercase, $green)
-            font-size: calc(20px + 4 *(100vw/1440))
             letter-spacing: calc(1px + 0.5 *(100vw/1440))
             margin: 100px 0 90px 0
     &-first-block
@@ -15,10 +14,12 @@
         align-items: center
         &__header
             +header(normal, 48px, 42px, 3.10588px, none, $blue)
-            font-size: calc(24px + 24 *(100vw/1440))
             letter-spacing: calc(1px + 2 *(100vw/1440))
             line-height: calc(30px + 12 *(100vw/1440))
             margin: 120px 0 60px 0
+            @media(max-width: $md4 + px)
+                font-size: 32px !important
+                margin: 60px 0 60px 0
         &__block
             display: flex
             flex-direction: row
@@ -32,9 +33,10 @@
                 width: 100%
         &__text 
             +text(normal, normal, 18px, 27px, 1.16471px, $black)
-            font-size: calc(16px + 2 *(100vw/1440))
             letter-spacing: calc(1px + 0.1 *(100vw/1440))
             text-align: left
+            @media(max-width: $md4 + px)
+                font-size: 16px !important
             p
                 margin: 15px 0
         &__secondsubblock

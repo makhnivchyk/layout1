@@ -21,17 +21,19 @@
         width: 49%
     &__header
         +header(normal, 48px, 42px, 3.10588px, none, $blue)
-        font-size: calc(24px + 24 *(100vw/1440))
         letter-spacing: calc(1px + 2 *(100vw/1440))
-        line-height: calc(30px + 12 *(100vw/1440))
+        line-height: calc(40px + 22 *(100vw/1440))
         margin-bottom: 45px
+        @media(max-width: $md4 + px)
+            font-size: 32px !important
         &_second
             text-align: center
     &__text
         +text(normal, normal, 18px, 27px, 1.16471px, $black)
-        font-size: calc(16px + 2 *(100vw/1440))
         letter-spacing: calc(1px + 0.1 *(100vw/1440))
         text-align: left
+        @media(max-width: $md4 + px)
+            font-size: 16px !important
         p
             margin: 15px auto
 
