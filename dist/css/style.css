@@ -2583,6 +2583,7 @@ header {
 
 .nav__list li {
   position: relative;
+  cursor: pointer;
 }
 
 .nav__link {
@@ -3688,6 +3689,7 @@ body.lock {
 
   .first-block__header {
     font-size: 36px;
+    margin-top: 0;
   }
 
   .third-block__header {
